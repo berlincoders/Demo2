@@ -18,8 +18,11 @@
 <!-- Add de navbar in a partial view at the folder shared-->  
 
      <%= render partial: "shared/navbar" %>
+
      <div  class ="container">
-        <%= yield %>
+      
+    <!-- <%= render partial: "shared/flash" %>     Just in case you wnated to use your flash-->
+         <%= yield %>
      </div>
   </body>
 </html>
