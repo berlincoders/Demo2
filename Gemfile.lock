@@ -68,6 +68,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    authentication-zero (2.16.5)
+    bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -164,6 +166,9 @@ GEM
     regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
+    revise_auth (0.1.1)
+      bcrypt (~> 3.1)
+      rails (>= 7.0.4)
     rexml (3.2.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.8.0)
@@ -209,6 +214,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  authentication-zero (~> 2.16)
   bootsnap
   capybara
   debug
@@ -216,6 +222,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  revise_auth (~> 0.1.1)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
